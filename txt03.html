@@ -4,44 +4,47 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dois amigos e uma cachaça</title>
+
+        <meta name="author" content="Vote Nulo">
+        <meta name="description" content="Esse outubro não será nosso!">
+        <meta property="og:image" content="https://github.com/AntonioNasi/vtnulo/blob/main/og-image.png">
+        <meta property="og:description" content="Esse outubro não será nosso, vote nulo!">
+
+        <title>Vote Nulo</title>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
         <link rel="stylesheet" type="text/css" href="./txt.css">
+
+        <!---------------------------------
+            Carrega HTML externo
+        ----------------------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script>
+            $(function () {
+                $('#container-logo-menu').load("./menu.html");
+                $('#banner').load("./banner.html");
+
+                $('#footer').load("./footer.html");
+            });
+        </script>
     </head>
     <body>
         <header>
             <div class="container-logo-menu" id="container-logo-menu">
-                <div class="logo">
-                    <h1>#VoteNulo</h1>
-                </div>
-                <nav class="menu" id="menu">
-                    <a href="./index.html">Início</a>
-                    <a href="#">Quem somos</a>
-                    <a href="#">Contato</a>
-                </nav>
-                <div class="dropdown" id="dropdown">
-                    <span class="material-symbols-outlined">menu</span>
-                    <div class="dropdown-content">
-                        <a href="./index.html">Início</a>
-                        <a href="#">Quem somos</a>
-                        <a href="#">Contato</a>
-                    </div>
-                </div>
+                
             </div>
         </header>
-        <div class="banner">
-            <a href="#">
-                <div class="b-banner">
-                    <p>Leia nosso manifesto!</p>
-                </div>
-            </a>
+        <div class="banner" id="banner">
+            
         </div>
-        <section>
-            <article>
-                <div class="text-article">
+        <section class="section-page">
+            <article class="article-page">
+                <div class="text-article-page">
                     <h1>Quem faz é quem sabe!</h1>
                     <p>__ Ô Pião! </p>
                     <p>Era assim que Rommel chamava Pedro, seu companheiro de trabalho por muitos anos.</p>
@@ -162,16 +165,14 @@
 
                 </div>
                
-                <a class="lermais" href="./index.html">Voltar</a>
+                <a class="voltar" href="./index.html">Voltar</a>
                 
             </article>
             
         </section>
 
-        <footer>
-            <div class="footer-container">
-                Voto Nulo
-            </div>
+        <footer id="footer">
+            
         </footer>
     </body>
 </html>
